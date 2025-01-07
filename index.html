@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavDisha Community Forum</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        NavDisha Community Forum
+    </header>
+
+    <!-- Language Dropdown -->
+    <div class="language-selector">
+        <label for="language">Select Language:</label>
+        <select id="language" onchange="changeLanguage()">
+            <option value="en">English</option>
+            <option value="hi">Hindi</option>
+        </select>
+    </div>
+
+    <div class="forum-container">
+        <div class="write-post">
+            <h3 id="share-your-thoughts">Share Your Thoughts</h3>
+            <textarea placeholder="Write your post here..."></textarea>
+            <button id="post-button" onclick="handlePost()">Post</button>
+        </div>
+
+        <div class="forum-item">
+            <h3 id="financial-independence-title">Building Financial Independence</h3>
+            <p id="financial-independence-description">
+                "Financial literacy is the first step to empowerment. Share your tips and success stories here!"
+            </p>
+        </div>
+
+        <div class="forum-item">
+            <h3 id="community-support-title">Community Support for Entrepreneurs</h3>
+            <p id="community-support-description">
+                "Let's help each other grow by discussing challenges and solutions faced in business."
+            </p>
+        </div>
+
+        <div class="forum-item">
+            <h3 id="budgeting-title">Budgeting Tips</h3>
+            <p id="budgeting-description">
+                "Share your best strategies for saving and managing daily expenses effectively."
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <a href="#" id="home-link">Home</a>
+        <a href="#" id="start-discussion-link">Start Discussion</a>
+        <a href="#" id="profile-link">Profile</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
